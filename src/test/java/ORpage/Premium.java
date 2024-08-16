@@ -15,6 +15,9 @@ public class Premium extends TechnicalComponents {
 	@FindBy(xpath="//div[@class='login_right']/div/div[6]")
 	public WebElement Register;
 	
+	@FindBy(xpath="//input[@id='ctl00_ContentPlaceHolder1_txtPolicy']")
+	public WebElement REGISTER;
+	
 	public Premium(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
@@ -25,4 +28,8 @@ public class Premium extends TechnicalComponents {
   public void PayRegister(WebElement element) {
 	  TechnicalComponents.Clickable(element);
   }
+  public void Complaint(WebElement element,String Text) {
+	  TechnicalComponents.sendingkeys(element, Text);
+  }
+  
 }

@@ -148,6 +148,11 @@ public void PayPremium() {
 public void sendRegister() {
 	p=new Premium(driver);
 	p.PayRegister(p.Register);
+	
+}
+public void R() {
+	p=new Premium(driver);
+	p.Complaint(p.REGISTER,"12245657");
 	ExtentFactory.getInstance().getExtent().log(Status.PASS,"Guarantee plain succesfully");
 	ExtentFactory.getInstance().getExtent().log(Status.PASS,MediaEntityBuilder.createScreenCaptureFromPath(TechnicalComponents.takescreenshot())
 			.build());

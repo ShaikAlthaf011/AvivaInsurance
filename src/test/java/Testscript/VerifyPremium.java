@@ -14,5 +14,6 @@ public void  VerifyPremium() throws IOException {
 	Verifyongurl(url);
 	PayPremium();
 	sendRegister();
+	R();
 }
 }
