@@ -24,6 +24,9 @@ public class GuarantedSavingplan extends TechnicalComponents {
     @FindBy(xpath="//div[@class='container readMoreContent']//div[@class='row']//h2[@class='heading__1']")
     public WebElement Text;
     
+    @FindBy(xpath="//*[@id='whyBuy']/div/div/div[2]/div/p")
+    public WebElement Pagraphtext;
+    
     
 	public GuarantedSavingplan(WebDriver driver) {
 		this.driver=driver;
@@ -36,6 +39,10 @@ public class GuarantedSavingplan extends TechnicalComponents {
 	   TechnicalComponents.Clickable(element);
    }
    public static String gettext(WebElement element,String Text) {
+	   String str=TechnicalComponents.Method_text(element, Text);
+	   return str;
+   }
+   public static String ParagrpahText(WebElement element,String Text) {
 	   String str=TechnicalComponents.Method_text(element, Text);
 	   return str;
    }

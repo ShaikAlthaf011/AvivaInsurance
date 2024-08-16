@@ -15,5 +15,6 @@ public void VerifyGuarantedpage() throws IOException {
 	gurantedplan();
 	Signatureplan(); 
 	GETTEXT();
+	Narishing();
 }
 }
