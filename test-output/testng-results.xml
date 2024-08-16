@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-16T11:01:13 IST" name="Default suite" finished-at="2024-08-16T11:01:36 IST" duration-ms="22057">
+    <groups>
+    </groups>
+    <test started-at="2024-08-16T11:01:13 IST" name="Default test" finished-at="2024-08-16T11:01:36 IST" duration-ms="22057">
+      <class name="Testscript.VerifyGuarantedpage">
+        <test-method is-config="true" signature="Reoprts()[pri:0, instance:Testscript.VerifyGuarantedpage@4218d6a3]" started-at="2024-08-16T11:01:13 IST" name="Reoprts" finished-at="2024-08-16T11:01:13 IST" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reoprts -->
+        <test-method is-config="true" signature="Open_browser(java.lang.reflect.Method)[pri:0, instance:Testscript.VerifyGuarantedpage@4218d6a3]" started-at="2024-08-16T11:01:14 IST" name="Open_browser" finished-at="2024-08-16T11:01:17 IST" duration-ms="3292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Testscript.VerifyGuarantedpage.VerifyGuarantedpage() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Open_browser -->
+        <test-method signature="VerifyGuarantedpage()[pri:0, instance:Testscript.VerifyGuarantedpage@4218d6a3]" started-at="2024-08-16T11:01:17 IST" name="VerifyGuarantedpage" finished-at="2024-08-16T11:01:34 IST" duration-ms="17483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGuarantedpage -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult)[pri:0, instance:Testscript.VerifyGuarantedpage@4218d6a3]" started-at="2024-08-16T11:01:34 IST" name="Teardown" finished-at="2024-08-16T11:01:36 IST" duration-ms="1204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyGuarantedpage status=SUCCESS method=VerifyGuarantedpage.VerifyGuarantedpage()[pri:0, instance:Testscript.VerifyGuarantedpage@4218d6a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- Testscript.VerifyGuarantedpage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
