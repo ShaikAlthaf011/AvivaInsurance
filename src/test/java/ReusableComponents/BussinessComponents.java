@@ -1,5 +1,7 @@
 package ReusableComponents;
 
+import org.testng.Assert;
+
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
@@ -120,6 +122,16 @@ public void Narishing() {
 String str=gp.ParagrpahText(gp.Pagraphtext,"Take a step towards smart financial planning with one of the most reliable and appealing savings options the Aviva signature guaranteed income plan connect with our executives to find out more details now ");
 	if(str.equals("Take a step towards smart financial planning with one of the most reliable and appealing savings options the Aviva signature guaranteed income plan connect with our executives to find out more details now")) {
 		System.out.println("Test case is passed");
+	}else {
+		System.out.println("Test case is Failed");
+	}
+}
+public void INCOME() {
+	gp=new GuarantedSavingplan(driver);
+	String b=gp.PlanIncome(gp.Incomeplan,"Aviva Signature Guaranteed Income Plan is that one plan which offers you both, wealth creation and financial security, with added convenience.");
+    String str="Aviva Signature Guaranteed Income Plan is that one plan which offers you both, wealth creation and financial security, with added convenience.";
+	if(b.equals(str)) {
+		System.out.println("Test case is Passed");
 	}else {
 		System.out.println("Test case is Failed");
 	}

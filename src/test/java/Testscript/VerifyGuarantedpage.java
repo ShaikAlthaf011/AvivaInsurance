@@ -16,5 +16,6 @@ public void VerifyGuarantedpage() throws IOException {
 	Signatureplan(); 
 	GETTEXT();
 	Narishing();
+	INCOME();
 }
 }

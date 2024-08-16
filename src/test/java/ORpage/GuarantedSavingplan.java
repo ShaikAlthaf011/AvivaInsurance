@@ -27,6 +27,9 @@ public class GuarantedSavingplan extends TechnicalComponents {
     @FindBy(xpath="//*[@id='whyBuy']/div/div/div[2]/div/p")
     public WebElement Pagraphtext;
     
+    @FindBy(xpath="//*[@id='whyBuy']/div/div/div[1]/div[2]/p")
+    public WebElement Incomeplan;
+    
     
 	public GuarantedSavingplan(WebDriver driver) {
 		this.driver=driver;
@@ -45,5 +48,10 @@ public class GuarantedSavingplan extends TechnicalComponents {
    public static String ParagrpahText(WebElement element,String Text) {
 	   String str=TechnicalComponents.Method_text(element, Text);
 	   return str;
+   }
+   public static String PlanIncome(WebElement element,String Text) {
+	   String str=TechnicalComponents.Method_text(element, Text);
+	   return str;
+	   
    }
 }
