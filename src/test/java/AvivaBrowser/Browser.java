@@ -83,7 +83,7 @@ public void Teardown(ITestResult results) {
 	}
 	extent.flush();
 	if(driver!=null) {
-		//driver.quit();
+		driver.quit();
 	}
 }
 public static String Given_Browser(String browser) throws IOException {

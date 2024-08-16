@@ -118,6 +118,10 @@ public void GETTEXT() {
 public void Narishing() {
 	gp=new GuarantedSavingplan(driver);
 String str=gp.ParagrpahText(gp.Pagraphtext,"Take a step towards smart financial planning with one of the most reliable and appealing savings options the Aviva signature guaranteed income plan connect with our executives to find out more details now ");
-	System.out.println(str);
+	if(str.equals("Take a step towards smart financial planning with one of the most reliable and appealing savings options the Aviva signature guaranteed income plan connect with our executives to find out more details now")) {
+		System.out.println("Test case is passed");
+	}else {
+		System.out.println("Test case is Failed");
+	}
 }
 }
