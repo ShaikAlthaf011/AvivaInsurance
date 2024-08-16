@@ -14,5 +14,6 @@ public void VerifyGuarantedpage() throws IOException {
 	Verifyongurl(url);
 	gurantedplan();
 	Signatureplan(); 
+	GETTEXT();
 }
 }

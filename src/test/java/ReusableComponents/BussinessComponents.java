@@ -106,4 +106,13 @@ public void Signatureplan() {
 	ExtentFactory.getInstance().getExtent().log(Status.PASS,MediaEntityBuilder.createScreenCaptureFromPath(TechnicalComponents.takescreenshot())
 			.build());
 }
+public void GETTEXT() {
+	gp=new GuarantedSavingplan(driver);
+	String str=gp.gettext(gp.Text,"Aviva Signature Guaranteed Income Plan");
+	if(str.equals("Aviva Signature Guaranteed Income Plan")) {
+		System.out.println("Test case is Passed");
+	}else {
+		System.out.println("Test case is Failed");
+	}
+}
 }

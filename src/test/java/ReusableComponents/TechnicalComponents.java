@@ -61,4 +61,7 @@ return filepath;
 public static void sendingkeys(WebElement element,String Text) {
 	element.sendKeys(Text);
 }
+public static boolean isdisplayed(WebElement element) {
+	return element.isDisplayed();
+}
 }
