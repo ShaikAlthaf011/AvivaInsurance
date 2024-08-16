@@ -8,10 +8,12 @@ import com.aventstack.extentreports.Status;
 import AvivaBrowser.ExtentFactory;
 import ORpage.GuarantedSavingplan;
 import ORpage.Loginpage;
+import ORpage.Premium;
 
 public class BussinessComponents extends TechnicalComponents{
 public static Loginpage lg;
 public static GuarantedSavingplan gp;
+public static Premium p;
 
 public static void Verifyongurl(String url) {
 	TechnicalComponents.Navigateurl(url);
@@ -135,5 +137,19 @@ public void INCOME() {
 	}else {
 		System.out.println("Test case is Failed");
 	}
+}
+public void PREMIUM() {
+	p=new Premium(driver);
+}
+public void PayPremium() {
+	p=new Premium(driver);
+	p.PayPremium(p.Pay);
+}
+public void sendRegister() {
+	p=new Premium(driver);
+	p.PayRegister(p.Register);
+	ExtentFactory.getInstance().getExtent().log(Status.PASS,"Guarantee plain succesfully");
+	ExtentFactory.getInstance().getExtent().log(Status.PASS,MediaEntityBuilder.createScreenCaptureFromPath(TechnicalComponents.takescreenshot())
+			.build());
 }
 }
