@@ -18,6 +18,15 @@ public class Premium extends TechnicalComponents {
 	@FindBy(xpath="//input[@id='ctl00_ContentPlaceHolder1_txtPolicy']")
 	public WebElement REGISTER;
 	
+	@FindBy(xpath="//input[@id='ctl00_ContentPlaceHolder1_txtLName']")
+	public WebElement lastName;
+	
+	@FindBy(xpath="//input[@id='ctl00_ContentPlaceHolder1_txtMobile']")
+	public WebElement Mobilenumber;
+	
+	@FindBy(xpath="//textarea")
+	public WebElement textarea;
+	
 	public Premium(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
@@ -31,5 +40,13 @@ public class Premium extends TechnicalComponents {
   public void Complaint(WebElement element,String Text) {
 	  TechnicalComponents.sendingkeys(element, Text);
   }
-  
+  public void namelast(WebElement element,String Text) {
+	  TechnicalComponents.sendingkeys(element, Text);;
+  }
+  public void Numbermobile(WebElement element,String Text) {
+	  TechnicalComponents.sendingkeys(element, Text);
+  }
+  public void areatext(WebElement element,String Text) {
+	  TechnicalComponents.sendingkeys(element, Text);
+  }
 }

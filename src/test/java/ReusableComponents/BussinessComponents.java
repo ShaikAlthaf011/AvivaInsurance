@@ -157,4 +157,25 @@ public void R() {
 	ExtentFactory.getInstance().getExtent().log(Status.PASS,MediaEntityBuilder.createScreenCaptureFromPath(TechnicalComponents.takescreenshot())
 			.build());
 }
+public void Namelast() {
+	p=new Premium(driver);
+	p.namelast(p.lastName,"shaik");
+	ExtentFactory.getInstance().getExtent().log(Status.PASS,"Guarantee plain succesfully");
+	ExtentFactory.getInstance().getExtent().log(Status.PASS,MediaEntityBuilder.createScreenCaptureFromPath(TechnicalComponents.takescreenshot())
+			.build());
+}
+public void numbermobile() {
+	p=new Premium(driver);
+	p.namelast(p.Mobilenumber,"7032618224");
+	ExtentFactory.getInstance().getExtent().log(Status.PASS,"Guarantee plain succesfully");
+	ExtentFactory.getInstance().getExtent().log(Status.PASS,MediaEntityBuilder.createScreenCaptureFromPath(TechnicalComponents.takescreenshot())
+			.build());
+}
+public void Area() {
+	p=new Premium(driver);
+	p.areatext(p.textarea,"Hi How are you");
+	ExtentFactory.getInstance().getExtent().log(Status.PASS,"Guarantee plain succesfully");
+	ExtentFactory.getInstance().getExtent().log(Status.PASS,MediaEntityBuilder.createScreenCaptureFromPath(TechnicalComponents.takescreenshot())
+			.build());
+}
 }

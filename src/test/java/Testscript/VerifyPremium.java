@@ -15,5 +15,8 @@ public void  VerifyPremium() throws IOException {
 	PayPremium();
 	sendRegister();
 	R();
+	Namelast();
+	numbermobile();
+	Area();
 }
 }
