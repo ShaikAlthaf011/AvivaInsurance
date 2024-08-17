@@ -1,14 +1,10 @@
 package ORpage;
 
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
+import org.openqa.selenium.support.PageFactory;
 
-import AvivaBrowser.ExtentFactory;
 import ReusableComponents.TechnicalComponents;
 
 public class GuarantedSavingplan extends TechnicalComponents {

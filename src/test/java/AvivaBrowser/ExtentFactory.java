@@ -2,8 +2,6 @@ package AvivaBrowser;
 
 import com.aventstack.extentreports.ExtentTest;
 
-import AvivaBrowser.ExtentFactory;
-
 public class ExtentFactory {
 	//Singleton design Pattern
 			//private constructor so that no one else can create object of this class

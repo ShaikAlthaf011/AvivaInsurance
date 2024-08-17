@@ -25,6 +25,8 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+
+
 public class Browser {
 	public static WebDriver driver;
 	public static Properties ps;

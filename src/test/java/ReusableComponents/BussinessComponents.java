@@ -1,7 +1,5 @@
 package ReusableComponents;
 
-import org.testng.Assert;
-
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 

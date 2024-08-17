@@ -2,8 +2,6 @@ package AvivaBrowser;
 
 import org.openqa.selenium.WebDriver;
 
-import AvivaBrowser.Browser;
-
 public class DriverFactory {
 	//Singleton design Pattern
 		//private constructor so that no one else can create object of this class
